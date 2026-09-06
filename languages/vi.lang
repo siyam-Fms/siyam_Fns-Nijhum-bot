@@ -1,0 +1,155 @@
+# index.js
+Goat.newVersionDetected=ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴠᴇʀꜱɪᴏɴ %1, ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ᴠᴇʀꜱɪᴏɴ ɪꜱ %2. ᴘʟᴇᴀꜱᴇ ᴜᴘᴅᴀᴛᴇ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ ʙᴇᴛᴛᴇʀ ʙʏ ᴛʏᴘɪɴɢ ɪɴᴛᴏ ᴛʜᴇ ᴄᴏɴꜱᴏʟᴇ/ᴄᴍᴅ ᴄᴏᴍᴍᴀɴᴅ: %3
+Goat.autoRestart1=ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʀᴇꜱᴛᴀʀᴛ ɪɴ %1
+Goat.autoRestart2=ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʀᴇꜱᴛᴀʀᴛ ʙʏ ᴄʀᴏɴ ᴊᴏʙ: %1
+Goat.googleApiTokenExpired=ɢᴏᴏɢʟᴇ ᴀᴘɪ ʀᴇꜰʀᴇꜱʜ ᴛᴏᴋᴇɴ ʜᴀꜱ ᴇxᴘɪʀᴇᴅ ᴏʀ ʙᴇᴇɴ ʀᴇᴠᴏᴋᴇᴅ, ᴘʟᴇᴀꜱᴇ ɢᴇᴛ ᴀ ɴᴇᴡ ᴛᴏᴋᴇɴ ᴀᴛ https://developers.google.com/oauthplayground/
+
+# bot/login/login.js
+login.currentlyLogged=ʟᴏɢɢɪɴɢ ɪɴ, ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...
+login.notFoundDirAccount=ᴄᴀɴɴᴏᴛ ꜰɪɴᴅ ꜰɪʟᴇ %1
+login.loginToken=ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴀᴄᴄᴇꜱꜱ ᴛᴏᴋᴇɴ...
+login.loginCookieString=ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ꜱᴛʀɪɴɢ...
+login.loginCookieNetscape=ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ɴᴇᴛꜱᴄᴀᴘᴇ...
+login.loginCookieArray=ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ...
+login.loginPassword=ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ & ᴘᴀꜱꜱᴡᴏʀᴅ...
+login.accountError=ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ꜰᴜʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏᴋᴇɴ (%1) ᴏʀ ᴄᴏᴏᴋɪᴇ (%2) ɪɴᴛᴏ ᴛʜᴇ ꜰɪʟᴇ %7
+login.cannotFindAccount=ᴄᴀɴɴᴏᴛ ꜰɪɴᴅ ꜰᴀᴄᴇʙᴏᴏᴋ ᴀᴄᴄᴏᴜɴᴛ. ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ:
+login.chooseAccount=ʟᴏɢɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ ᴀɴᴅ ᴘᴀꜱꜱᴡᴏʀᴅ
+login.chooseToken=ʟᴏɢɪɴ ᴡɪᴛʜ ꜰᴜʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏᴋᴇɴ
+login.chooseCookieString=ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ꜱᴛʀɪɴɢ
+login.chooseCookieArray=ʟᴏɢɪɴ ᴡɪᴛʜ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ
+login.loginWith=ʏᴏᴜ ᴄʜᴏꜱᴇ ᴛᴏ %1
+login.inputEmail=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴇᴍᴀɪʟ/ɪᴅ ᴏʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ:
+login.inputPassword=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘᴀꜱꜱᴡᴏʀᴅ:
+login.input2FA=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ᴛʜᴇ 2ꜰᴀ ᴄᴏᴅᴇ (ʟᴇᴀᴠᴇ ʙʟᴀɴᴋ ɪꜰ ɴᴏᴛ ᴇɴᴀʙʟᴇᴅ):
+login.inputToken=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ꜰᴜʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏᴋᴇɴ (ꜱᴛᴀʀᴛꜱ ᴡɪᴛʜ ᴇᴀᴀᴀᴀ):
+login.inputCookieString=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴄᴏᴏᴋɪᴇ ꜱᴛʀɪɴɢ:
+login.inputCookieArray=> ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴄᴏᴏᴋɪᴇ ᴀʀʀᴀʏ:
+login.refreshCookie=ʀᴇꜰʀᴇꜱʜɪɴɢ ᴄᴏᴏᴋɪᴇ...
+login.refreshCookieError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇꜰʀᴇꜱʜɪɴɢ ᴛʜᴇ ᴄᴏᴏᴋɪᴇ
+login.refreshCookieSuccess=ʀᴇꜰʀᴇꜱʜᴇᴅ ᴄᴏᴏᴋɪᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! ᴘʟᴇᴀꜱᴇ ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+login.refreshCookieWarning=ᴀᴜᴛᴏ-ʀᴇꜰʀᴇꜱʜ ᴄᴏᴏᴋɪᴇ ɪꜱ ᴇɴᴀʙʟᴇᴅ, ʙᴜᴛ ᴇᴍᴀɪʟ & ᴘᴀꜱꜱᴡᴏʀᴅ ᴀʀᴇ ɴᴏᴛ ᴄᴏɴꜰɪɢᴜʀᴇᴅ ɪɴ config.json
+login.tokenError=ᴛᴏᴋᴇɴ ɪꜱ ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ. ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ %2
+login.cookieError=ᴄᴏᴏᴋɪᴇ ɪꜱ ɪɴᴠᴀʟɪᴅ ᴏʀ ᴇxᴘɪʀᴇᴅ
+login.loginPasswordError=ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʟᴏɢɢɪɴɢ ɪɴ ᴡɪᴛʜ ᴇᴍᴀɪʟ & ᴘᴀꜱꜱᴡᴏʀᴅ
+login.loginSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ ʟᴏɢɪɴ!
+login.loginError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴅᴜʀɪɴɢ ʟᴏɢɪɴ
+login.openDashboardSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴏᴘᴇɴᴇᴅ ʙᴏᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴅᴀꜱʜʙᴏᴀʀᴅ
+login.openDashboardError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴏᴘᴇɴɪɴɢ ᴛʜᴇ ᴅᴀꜱʜʙᴏᴀʀᴅ
+login.changeGbanData=ᴅᴀᴛᴀ ʜᴀꜱ ʙᴇᴇɴ ᴀʟᴛᴇʀᴇᴅ! ᴄᴀɴɴᴏᴛ ʟᴀᴜɴᴄʜ ᴛʜᴇ ʙᴏᴛ
+login.errorNoti=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ꜰᴇᴛᴄʜɪɴɢ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ
+login.refreshFbstateSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜰʀᴇꜱʜᴇᴅ %1
+login.refreshFbstateError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇꜰʀᴇꜱʜɪɴɢ %1
+login.youAreBanned=ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ꜰʀᴏᴍ ᴜꜱɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ᴘʀᴏᴊᴇᴄᴛ
+login.runBot=ʙᴏᴛ ʟᴀᴜɴᴄʜᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! ʀᴇᴀᴅʏ ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ᴍᴇꜱꜱᴀɢᴇꜱ
+login.notLoggedIn=ʟᴏɢɪɴ ꜰᴀɪʟᴇᴅ. ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜰᴀᴄᴇʙᴏᴏᴋ ᴀᴄᴄᴏᴜɴᴛ ᴄʀᴇᴅᴇɴᴛɪᴀʟꜱ
+login.callBackError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ɪɴ listenMqtt ᴄᴀʟʟʙᴀᴄᴋ
+login.userBanned=❌ 𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐠𝐥𝐨𝐛𝐚𝐥𝐥𝐲 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭!
+login.checkGbanError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴄʜᴇᴄᴋɪɴɢ ɢʙᴀɴ. ᴛʀʏ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ꜱᴏᴜʀᴄᴇ (node update)
+login.gbanMessage=❌ 𝐘𝐨𝐮 𝐰𝐞𝐫𝐞 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 𝐨𝐧 %1\n» 𝐑𝐞𝐚𝐬𝐨𝐧: %2\n» 𝐓𝐢𝐦𝐞: %3
+login.gbanMessageToDate=❌ 𝐘𝐨𝐮 𝐰𝐞𝐫𝐞 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 𝐨𝐧 %1\n» 𝐑𝐞𝐚𝐬𝐨𝐧: %2\n» 𝐓𝐢𝐦𝐞: %3\n» 𝐔𝐧𝐭𝐢𝐥: %4
+login.gbanAdminMessage=⚠️ 𝐔𝐬𝐞𝐫 %1 𝐰𝐚𝐬 𝐛𝐚𝐧𝐧𝐞𝐝 𝐨𝐧 %2\n» 𝐑𝐞𝐚𝐬𝐨𝐧: %3
+login.openServerUptimeSuccess=🚀 ᴏᴘᴇɴᴇᴅ ᴜᴘᴛɪᴍᴇ ꜱᴇʀᴠᴇʀ: %1
+login.openServerUptimeError=ꜰᴀɪʟᴇᴅ ᴛᴏ ꜱᴛᴀʀᴛ ᴜᴘᴛɪᴍᴇ ꜱᴇʀᴠᴇʀ
+login.restartListenMessage=ᴀᴜᴛᴏ-ʀᴇꜱᴛᴀʀᴛ ꜰᴏʀ ListenMQTT ᴇɴᴀʙʟᴇᴅ ᴇᴠᴇʀʏ %1
+login.stopRestartListenMessage=ᴀᴜᴛᴏ-ʀᴇꜱᴛᴀʀᴛ ꜰᴏʀ ListenMQTT ᴅɪꜱᴀʙʟᴇᴅ
+login.restartListenMessageError=ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʀᴇꜱᴛᴀʀᴛɪɴɢ ListenMQTT
+login.restartListenMessage2=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜱᴛᴀʀᴛᴇᴅ ListenMQTT
+login.refreshCookieAfter=ᴀᴜᴛᴏ-ʀᴇꜰʀᴇꜱʜ ᴄᴏᴏᴋɪᴇ ꜱᴇᴛ ꜰᴏʀ ᴇᴠᴇʀʏ %1
+login.listenMqttClose=ListenMQTT ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴄʟᴏꜱᴇᴅ
+login.listenMqttCloseByUser=ListenMQTT ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴄʟᴏꜱᴇᴅ ʙʏ ᴜꜱᴇʀ
+login.retryCheckLiveCookie=ʀᴇᴛʀʏɪɴɢ ᴄᴏᴏᴋɪᴇ ᴄʜᴇᴄᴋ... %1
+login.startBotSuccess=ʙᴏᴛ ꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! ʟɪꜱᴛᴇɴɪɴɢ ꜰᴏʀ ᴍᴇꜱꜱᴀɢᴇꜱ
+
+version.tooOldVersion=ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴀɴ ᴏᴜᴛᴅᴀᴛᴇᴅ ᴠᴇʀꜱɪᴏɴ. ᴘʟᴇᴀꜱᴇ ᴜᴘᴅᴀᴛᴇ ᴜꜱɪɴɢ: %1
+
+# bot/custom.js
+custom.refreshedFb_dtsg=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜰʀᴇꜱʜᴇᴅ fb_dtsg ᴀɴᴅ jazoest
+custom.refreshedFb_dtsgError=ꜰᴀɪʟᴇᴅ ᴛᴏ ʀᴇꜰʀᴇꜱʜ fb_dtsg ᴀɴᴅ jazoest
+
+# bot/login/loadData.js
+loadData.loadThreadDataSuccess=ʟᴏᴀᴅᴇᴅ ᴅᴀᴛᴀ ꜰᴏʀ %1 ɢʀᴏᴜᴘ(ꜱ) ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!
+loadData.loadUserDataSuccess=ʟᴏᴀᴅᴇᴅ ᴅᴀᴛᴀ ꜰᴏʀ %1 ᴜꜱᴇʀ(ꜱ) ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!
+loadData.refreshingThreadData=ᴜᴘᴅᴀᴛɪɴɢ ɢʀᴏᴜᴘ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ...
+loadData.refreshThreadDataSuccess=ᴜᴘᴅᴀᴛᴇᴅ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰᴏʀ %1 ɢʀᴏᴜᴘ(ꜱ)!
+loadData.refreshThreadDataError=ꜰᴀɪʟᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ɢʀᴏᴜᴘ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ!
+
+# bot/login/loadScripts.js
+loadScripts.loadScriptsError=ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ʟᴏᴀᴅɪɴɢ %1 ꜰɪʟᴇ(ꜱ):
+loadScripts.loadScriptsNotMatchOrigin=ᴛʜᴇ %1 ꜰɪʟᴇ(ꜱ) ᴅᴏ ɴᴏᴛ ᴍᴀᴛᴄʜ ᴛʜᴇ ᴏʀɪɢɪɴᴀʟ ɢɪᴛʜᴜʙ ꜱᴏᴜʀᴄᴇ:
+loadScripts.NOT_FOUND=ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴏʀɪɢɪɴᴀʟ ꜱᴏᴜʀᴄᴇ:
+loadScripts.NOT_MATCH=ᴅᴏᴇꜱ ɴᴏᴛ ᴍᴀᴛᴄʜ ᴏʀɪɢɪɴᴀʟ ꜱᴏᴜʀᴄᴇ:
+
+# bot/login/socketIO.js
+socketIO.connected=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ Socket.IO ꜱᴇʀᴠᴇʀ!
+socketIO.error=ꜰᴀɪʟᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ Socket.IO ꜱᴇʀᴠᴇʀ
+
+# bot/handler/handlerCheckData.js
+handlerCheckData.cantCreateThread=ꜰᴀɪʟᴇᴅ ᴛᴏ ꜱᴀᴠᴇ ɢʀᴏᴜᴘ (ɪᴅ: %1) ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ!
+handlerCheckData.cantCreateUser=ꜰᴀɪʟᴇᴅ ᴛᴏ ꜱᴀᴠᴇ ᴜꜱᴇʀ (ɪᴅ: %1) ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ!
+
+# bot/handler/handlerEvents.js
+handlerEvents.userBanned=❌ 𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐛𝐞𝐞𝐧 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭!\n» 𝐑𝐞𝐚𝐬𝐨𝐧: %1\n» 𝐓𝐢𝐦𝐞: %2\n» 𝐔𝐬𝐞𝐫 𝐈𝐃: %3
+handlerEvents.threadBanned=❌ 𝐓𝐡𝐢𝐬 𝐠𝐫𝐨𝐮𝐩 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐛𝐨𝐭!\n» 𝐑𝐞𝐚𝐬𝐨𝐧: %1\n» 𝐓𝐢𝐦𝐞: %2\n» 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃: %3
+handlerEvents.onlyAdminBox=⚠️ 𝐓𝐡𝐢𝐬 𝐠𝐫𝐨𝐮𝐩 𝐢𝐬 𝐜𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐢𝐧 "𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧" 𝐦𝐨𝐝𝐞. 𝐎𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐛𝐨𝐭!
+handlerEvents.onlyAdminBot=❌ | 𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐨𝐧𝐥𝐲 𝐦𝐲 𝐛𝐨𝐬𝐬 𝐒𝐈𝐘𝐀𝐌 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐛𝐨𝐭!
+handlerEvents.commandNotFound=📜 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 "%1" 𝐝𝐨𝐞𝐬 𝐧𝐨𝐭 𝐞𝐱𝐢𝐬𝐭. 𝐓𝐲𝐩𝐞 %2𝐡𝐞𝐥𝐩 𝐭𝐨 𝐬𝐞𝐞 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬.
+handlerEvents.commandNotFound2=📜 𝐓𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐲𝐨𝐮 𝐮𝐬𝐞𝐝 𝐝𝐨𝐞𝐬 𝐧𝐨𝐭 𝐞𝐱𝐢𝐬𝐭. 𝐓𝐲𝐩𝐞 %1𝐡𝐞𝐥𝐩 𝐭𝐨 𝐬𝐞𝐞 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬.
+handlerEvents.commandSyntaxError=📜 𝐈𝐧𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐬𝐲𝐧𝐭𝐚𝐱. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐭𝐲𝐩𝐞 %1𝐡𝐞𝐥𝐩 %2 𝐟𝐨𝐫 𝐮𝐬𝐚𝐠𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬!
+handlerEvents.onlyAdmin=❌ | 𝐎𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 "%1" 𝐜𝐨𝐦𝐦𝐚𝐧𝐝!
+handlerEvents.onlyAdminToUseOnReply=❌ | 𝐎𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐩𝐥𝐲 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"!
+handlerEvents.onlyAdminToUseOnReaction=❌ | 𝐎𝐧𝐥𝐲 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐚𝐜𝐭𝐢𝐨𝐧 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"!
+handlerEvents.onlyAdminBot2=❌ | 𝐎𝐧𝐥𝐲 𝐦𝐲 𝐛𝐨𝐬𝐬 𝐒𝐈𝐘𝐀𝐌 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 "%1" 𝐜𝐨𝐦𝐦𝐚𝐧𝐝!
+handlerEvents.onlyAdminBot2ToUseOnReply=❌ | 𝐎𝐧𝐥𝐲 𝐦𝐲 𝐛𝐨𝐬𝐬 𝐒𝐈𝐘𝐀𝐌 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐩𝐥𝐲 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"!
+handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | 𝐎𝐧𝐥𝐲 𝐦𝐲 𝐛𝐨𝐬𝐬 𝐒𝐈𝐘𝐀𝐌 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐫𝐞𝐚𝐜𝐭𝐢𝐨𝐧 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 "%1"!
+handlerEvents.waitingForCommand=⏱ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 %1𝐬 𝐛𝐞𝐟𝐨𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐚𝐠𝐚𝐢𝐧!
+handlerEvents.errorOccurred=❌ [ %1 ]\n𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮𝐫𝐫𝐞𝐝 𝐢𝐧 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 "%2":\n\n%3
+handlerEvents.errorOccurred2=❌ [ %1 ]\n𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮𝐫𝐫𝐞𝐝 𝐢𝐧 onChat 𝐚𝐭 "%2":\n\n%3
+handlerEvents.errorOccurred3=❌ [ %1 ]\n𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮𝐫𝐫𝐞𝐝 𝐢𝐧 onReply 𝐚𝐭 "%2":\n\n%3
+handlerEvents.errorOccurred4=❌ [ %1 ]\n𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮𝐫𝐫𝐞𝐝 𝐢𝐧 onReaction 𝐚𝐭 "%2":\n\n%3
+handlerEvents.errorOccurred5=❌ [ %1 ]\n𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮ʀʀᴇᴅ ɪɴ event "%2":\n\n%3
+handlerEvents.errorOccurred6=❌ [ %1 ]\n𝐀𝐧 ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ɪɴ onEvent ᴀᴛ "%2":\n\n%3
+handlerEvents.errorOccurred7=❌ [ %1 ]\n𝐀𝐧 ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ɪɴ onAnyEvent ᴀᴛ "%2":\n\n%3
+handlerEvents.cannotFindCommandName=❌ 𝐂𝐚𝐧𝐧𝐨𝐭 𝐟𝐢𝐧𝐝 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐧𝐚𝐦𝐞 𝐭𝐨 𝐞𝐱𝐞𝐜𝐮𝐭𝐞 𝐭𝐡𝐢𝐬 𝐫𝐞𝐩𝐥𝐲!
+handlerEvents.cannotFindCommand=❌ 𝐂𝐚𝐧𝐧𝐨𝐭 𝐟𝐢𝐧𝐝 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 "%1" 𝐭𝐨 𝐞𝐱𝐞𝐜𝐮𝐭𝐞 𝐭𝐡𝐢𝐬 𝐫𝐞𝐩𝐥𝐲!
+
+# bot/autoUptime.js
+autoUptime.autoUptimeTurnedOn=ᴀᴜᴛᴏ-ᴜᴘᴛɪᴍᴇ ᴍᴏᴅᴇ ɪꜱ ɴᴏᴡ ᴏɴ
+
+# database/controller/index.js
+indexController.connectingMongoDB=ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ᴍᴏɴɢᴏᴅʙ ᴅᴀᴛᴀʙᴀꜱᴇ...
+indexController.connectMongoDBSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴍᴏɴɢᴏᴅʙ ᴅᴀᴛᴀʙᴀꜱᴇ!
+indexController.connectMongoDBError=ꜰᴀɪʟᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴍᴏɴɢᴏᴅʙ ᴅᴀᴛᴀʙᴀꜱᴇ:
+indexController.connectingMySQL=ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴛᴏ ꜱǫʟɪᴛᴇ ᴅᴀᴛᴀʙᴀꜱᴇ...
+indexController.connectMySQLSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ꜱǫʟɪᴛᴇ ᴅᴀᴛᴀʙᴀꜱᴇ!
+indexController.connectMySQLError=ꜰᴀɪʟᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ꜱǫʟɪᴛᴇ ᴅᴀᴛᴀʙᴀꜱᴇ:
+
+# updater.js
+updater.updateTooFast=ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ᴀᴛ ʟᴇᴀꜱᴛ 5 ᴍɪɴᴜᴛᴇꜱ ᴀꜰᴛᴇʀ ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ᴄᴏᴍᴍɪᴛ. %1ᴍ %2ꜱ ʀᴇᴍᴀɪɴɪɴɢ
+updater.latestVersion=ʏᴏᴜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜꜱɪɴɢ ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ᴠᴇʀꜱɪᴏɴ!
+updater.cantFindVersion=ᴜɴᴋɴᴏᴡɴ ᴠᴇʀꜱɪᴏɴ (%1). ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ package.json
+updater.newVersions=ꜰᴏᴜɴᴅ %1 ɴᴇᴡ ᴜᴘᴅᴀᴛᴇ(ꜱ). ꜱᴛᴀʀᴛɪɴɢ ᴜᴘᴅᴀᴛᴇ...
+updater.updateSuccess=ᴜᴘᴅᴀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! %1
+updater.configChanged=%1 ʜᴀꜱ ʙᴇᴇɴ ᴍᴏᴅɪꜰɪᴇᴅ. ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ config.json
+updater.installingPackages=ɪɴꜱᴛᴀʟʟɪɴɢ ᴅᴇᴘᴇɴᴅᴇɴᴄɪᴇꜱ...
+updater.installSuccess=ᴅᴇᴘᴇɴᴅᴇɴᴄɪᴇꜱ ɪɴꜱᴛᴀʟʟᴇᴅ! ᴘʟᴇᴀꜱᴇ ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+updater.backupSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʙᴀᴄᴋᴇᴅ ᴜᴘ ᴍᴏᴅɪꜰɪᴇᴅ ꜰɪʟᴇꜱ ɪɴ %1
+updater.restartToApply=ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴀᴘᴘʟʏ ᴄʜᴀɴɢᴇꜱ
+updater.skipFile=ᴀ ɴᴇᴡ ᴠᴇʀꜱɪᴏɴ ᴏꜰ %1 ɪꜱ ᴀᴠᴀɪʟᴀʙʟᴇ, ʙᴜᴛ ᴡᴀꜱ ꜱᴋɪᴘᴘᴇᴅ (%2)
+
+# dashboard/routes/verifyfbid.js
+verifyfbid.sendCode=🔒 Yᴏᴜʀ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴄᴏᴅᴇ ɪs:\n%1\nTʜᴇ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴄᴏᴅᴇ ɪs ᴠᴀʟɪᴅ ғᴏʀ %2 ᴍɪɴᴜᴛᴇs
+
+# utils.js
+utils.errorOccurred=❌ 𝐀𝐧 𝐞𝐫𝐫𝐨𝐫 𝐨𝐜𝐜𝐮𝐫𝐫𝐞𝐝:\n\n%1
+
+# for command
+command.restartedBot=ʙᴏᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇꜱᴛᴀʀᴛᴇᴅ!
+
+# dashboard/app.js
+app.googleApiRefreshTokenExpired=ɢᴏᴏɢʟᴇ ᴀᴘɪ ʀᴇꜰʀᴇꜱʜ ᴛᴏᴋᴇɴ ᴇxᴘɪʀᴇᴅ. ɢᴇᴛ ᴀ ɴᴇᴡ ᴏɴᴇ ᴀᴛ https://developers.google.com/oauthplayground/
+app.tooManyRequests=ᴛᴏᴏ ᴍᴀɴʏ ʀᴇǫᴜᴇꜱᴛꜱ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ!
+app.notPermissionChangeFbstate=ʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴄʜᴀɴɢᴇ fbstate!
+app.notFoundFbstate=ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴠᴀʟɪᴅ fbstate!
+app.changedFbstateSuccess=ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄʜᴀɴɢᴇᴅ fbstate!
+app.serverError=ꜱᴇʀᴠᴇʀ ᴇʀʀᴏʀ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ!
