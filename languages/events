@@ -1,0 +1,40 @@
+module.exports = {
+	// You can customize the language here or directly in the command files
+	autoUpdateThreadInfo: {},
+	checkwarn: {
+		text: {
+			warn: "⚠️ 𝐌𝐞𝐦𝐛𝐞𝐫 %1 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐰𝐚𝐫𝐧𝐞𝐝 𝟑 𝐭𝐢𝐦𝐞𝐬 𝐚𝐧𝐝 𝐢𝐬 𝐧𝐨𝐰 𝐛𝐚𝐧𝐧𝐞𝐝 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩!\n- 𝐍𝐚𝐦𝐞: %1\n- 𝐔𝐈𝐃: %2\n- 𝐓𝐨 𝐮𝐧𝐛𝐚𝐧, 𝐮𝐬𝐞: \"%3warn unban <uid>\"",
+			needPermission: "❌ | 𝐁𝐨𝐭 𝐧𝐞𝐞𝐝𝐬 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐨𝐫 𝐩𝐞𝐫𝐦𝐢𝐬𝐬𝐢𝐨𝐧 𝐭𝐨 𝐤𝐢𝐜𝐤 𝐛𝐚𝐧𝐧𝐞𝐝 𝐦𝐞𝐦𝐛𝐞𝐫𝐬!"
+		}
+	},
+	leave: {
+		text: {
+			session1: "morning",
+			session2: "noon",
+			session3: "afternoon",
+			session4: "evening",
+			leaveType1: "left the group",
+			leaveType2: "was kicked from the group"
+		}
+	},
+	logsbot: {
+		text: {
+			title: "⚙️ ━━━ [ 𝐁𝐎𝐓 𝐋𝐎𝐆𝐒 ] ━━━ ⚙️",
+			added: "\n✅ 𝐄𝐯𝐞𝐧𝐭: 𝐁𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐚 𝐧𝐞𝐰 𝐠𝐫𝐨𝐮𝐩!\n- 𝐀𝐝𝐝𝐞𝐝 𝐛𝐲: %1",
+			kicked: "\n❌ 𝐄𝐯𝐞𝐧𝐭: 𝐁𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐦𝐨𝐯𝐞𝐝/𝐤𝐢𝐜𝐤𝐞𝐝!\n- 𝐊𝐢𝐜𝐤𝐞𝐝 𝐛𝐲: %1",
+			footer: "\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: %1\n- 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞: %2\n- 𝐆𝐫𝐨𝐮𝐩 𝐈𝐃: %3\n- 𝐓𝐢𝐦𝐞: %4"
+		}
+	},
+	onEvent: {},
+	welcome: {
+		text: {
+			session1: "morning",
+			session2: "noon",
+			session3: "afternoon",
+			session4: "evening",
+			welcomeMessage: "✨ 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐢𝐧𝐯𝐢𝐭𝐢𝐧𝐠 𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩!\n- 𝐌𝐲 𝐏𝐫𝐞𝐟𝐢𝐱: [ %1 ]\n- 𝐓𝐲𝐩𝐞 %1𝐡𝐞𝐥𝐩 𝐭𝐨 𝐬𝐞𝐞 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬.",
+			multiple1: "you",
+			multiple2: "you guys"
+		}
+	}
+};
